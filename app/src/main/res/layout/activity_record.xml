@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".recordclass">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="341dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/button"
+            android:layout_width="149dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="onclasstimetableclicked"
+            android:src="@drawable/baseline_playlist_add_black_18dp" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/button4"
+            android:layout_width="149dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="ontextclicked"
+            android:src="@drawable/baseline_format_color_text_black_18dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_stop_595b40b65ba036ed117d45cc"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/recordButton"
+        app:layout_constraintEnd_toEndOf="@+id/recordButton"
+        app:layout_constraintStart_toStartOf="@+id/recordButton"
+        app:layout_constraintTop_toTopOf="@+id/recordButton" />
+
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/ic_record_595b40b65ba036ed117d4557"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Chronometer
+        android:id="@+id/mChronometer"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="50sp"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/recordButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/ic_folder_595b40b65ba036ed117d4414"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/loadButton2"
+        android:layout_width="237dp"
+        android:layout_height="219dp"
+
+        android:background="@drawable/kakako"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+
+</android.support.constraint.ConstraintLayout>

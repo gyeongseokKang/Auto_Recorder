@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Auto Recorder</string>
+    <string name="title_activity_class_database">class_database</string>
+    <string name="Sun">Sun</string>
+    <string name="Mon">Mon</string>
+    <string name="Tue">Tue</string>
+    <string name="Wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+    <string name="done">Done</string>
+    <string name="save">Save</string>
+    <string name="discard">Discard</string>
+</resources>

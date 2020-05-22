@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cafe.adriel.androidaudioconverter.sample">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".App"
+        android:icon="@drawable/kakako"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Design.Light">
+        <activity
+            android:name=".recordclass"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.sec.android.app.myfiles.VIEW" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".listenlist" />
+        <activity android:name=".listenlist2" />
+        <activity android:name=".tempconvert" />
+        <activity android:name=".texttransferview" />
+        <activity android:name=".Createclass"/>
+        <activity android:name=".audio_text"/>
+
+        <activity android:name=".ClassAdapter"/>
+        <activity android:name=".ConvertActivity"/>
+
+        <activity
+            android:name=".class_database"
+            android:label="@string/title_activity_class_database"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <receiver android:name=".Notification_receiver"/>
+
+        <activity android:name=".LoadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+    </application>
+
+</manifest>
